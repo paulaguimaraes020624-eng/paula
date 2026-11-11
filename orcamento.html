@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedir orçamento | Paula Guimarães Tecnologias</title>
+  <meta name="description" content="Peça o seu orçamento grátis de energia solar e internet. Resposta em 24 horas, sem compromisso.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Paula Guimarães Tecnologias - Início">
+        <span class="logo-icone">PG</span>
+        <span>Paula Guimarães<small>Tecnologias</small></span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="menu-toggle" class="menu-botao" aria-hidden="true">&#9776;</label>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a class="btn btn-principal btn-pequeno" href="orcamento.html" aria-current="page">Pedir orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <div class="container">
+        <h1>Receba o seu orçamento grátis em 24 horas</h1>
+        <p>Preencha o formulário. Um técnico entra em contacto para perceber o que precisa.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container dividida">
+        
+        <form class="formulario" action="https://formspree.io/f/SEU_ID_ORCAMENTO" method="post">
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+            <span class="erro">Escreva o seu nome.</span>
+          </div>
+
+          <div class="linha-2">
+            <div class="campo">
+              <label for="telefone">Telefone ou WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel-national" inputmode="numeric" pattern="9[0-9]{8}" maxlength="9" placeholder="9XX XXX XXX" required>
+              <span class="erro">Use 9 dígitos, começando por 9.</span>
+            </div>
+            <div class="campo">
+              <label for="email">Email <span class="opcional">(opcional)</span></label>
+              <input type="email" id="email" name="email" autocomplete="email">
+              <span class="erro">Verifique o email.</span>
+            </div>
+          </div>
+
+          <div class="linha-2">
+            <div class="campo">
+              <label for="provincia">Província</label>
+              <select id="provincia" name="provincia" required>
+                <option value="">Escolha a província</option>
+                <option>Bengo</option>
+                <option>Benguela</option>
+                <option>Bié</option>
+                <option>Cabinda</option>
+                <option>Cuando</option>
+                <option>Cubango</option>
+                <option>Cuanza Norte</option>
+                <option>Cuanza Sul</option>
+                <option>Cunene</option>
+                <option>Huambo</option>
+                <option>Huíla</option>
+                <option>Icolo e Bengo</option>
+                <option>Luanda</option>
+                <option>Lunda Norte</option>
+                <option>Lunda Sul</option>
+                <option>Malanje</option>
+                <option>Moxico</option>
+                <option>Moxico Leste</option>
+                <option>Namibe</option>
+                <option>Uíge</option>
+                <option>Zaire</option>
+              </select>
+              <span class="erro">Escolha a província.</span>
+            </div>
+            <div class="campo">
+              <label for="municipio">Município ou bairro</label>
+              <input type="text" id="municipio" name="municipio" required>
+              <span class="erro">Indique o município ou bairro.</span>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="tipo-cliente">Tipo de cliente</label>
+            <select id="tipo-cliente" name="tipo_cliente" required>
+              <option value="">Escolha uma opção</option>
+              <option>Casa</option>
+              <option>Negócio</option>
+              <option>Escola ou clínica</option>
+              <option>Igreja</option>
+              <option>Outro</option>
+            </select>
+            <span class="erro">Escolha o tipo de cliente.</span>
+          </div>
+
+          <div class="campo">
+            <fieldset>
+              <legend>Em que está interessado?</legend>
+              <div class="opcoes">
+                <label><input type="radio" name="interesse" value="Energia solar" required> Energia solar</label>
+                <label><input type="radio" name="interesse" value="Internet"> Internet</label>
+                <label><input type="radio" name="interesse" value="Os dois"> Os dois</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="campo">
+            <label for="necessidade">O que precisa de ligar? <span class="opcional">(opcional)</span></label>
+            <textarea id="necessidade" name="necessidade" placeholder="Ex.: frigorífico, TV, 3 computadores, 5 pessoas a usar internet"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="orcamento">Orçamento aproximado <span class="opcional">(opcional)</span></label>
+            <select id="orcamento" name="orcamento">
+              <option value="">Prefiro não dizer</option>
+              <option>Até 200 000 Kz</option>
+              <option>200 000 a 800 000 Kz</option>
+              <option>Acima de 800 000 Kz</option>
+              <option>Não sei</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <fieldset>
+              <legend>Como prefere ser contactado?</legend>
+              <div class="opcoes">
+                <label><input type="radio" name="contacto_preferido" value="Chamada" required> Chamada</label>
+                <label><input type="radio" name="contacto_preferido" value="WhatsApp"> WhatsApp</label>
+                <label><input type="radio" name="contacto_preferido" value="Email"> Email</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="campo">
+            <div class="opcoes">
+              <label><input type="checkbox" name="consentimento" value="sim" required> Aceito ser contactado sobre este pedido.</label>
+            </div>
+            <p class="privacidade">Usamos os seus dados só para responder ao pedido. Não os partilhamos com terceiros.</p>
+          </div>
+
+          <button class="btn btn-principal" type="submit">Quero o meu orçamento grátis</button>
+        </form>
+
+        <aside class="garantias">
+          <h2>As nossas garantias</h2>
+          <ul class="lista-check">
+            <li>Sem compromisso</li>
+            <li>Visita técnica gratuita</li>
+            <li>Resposta em 24 horas</li>
+            <li>Preço claro, por escrito</li>
+          </ul>
+          <p>Prefere falar já? Envie uma mensagem no WhatsApp.</p>
+          <a class="btn btn-principal" href="https://wa.me/244900000000">Falar no WhatsApp</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grelha">
+        <div>
+          <h3>Paula Guimarães Tecnologias</h3>
+          <p>Energia solar e internet para casas, escolas e negócios em Angola.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="orcamento.html">Pedir orçamento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Telefone: +244 940 408 885</li>
+            <li>Email: paulaguimaraes020624@gmail.com</li>
+            <li>Luanda, Angola</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Novidades</h3>
+          <p>Dicas de poupança de energia e ofertas. Sem spam.</p>
+          <form class="newsletter" action="https://formspree.io/f/SEU_ID_NEWSLETTER" method="post">
+            <label for="email-news" class="skip">O seu email</label>
+            <input type="email" id="email-news" name="email" placeholder="O seu email" required>
+            <button class="btn btn-principal btn-pequeno" type="submit">Receber novidades</button>
+          </form>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Paula Guimarães Tecnologias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whats-flutuante" href="https://wa.me/244940408885" aria-label="Falar no WhatsApp">WhatsApp</a>
+</body>
+</html>

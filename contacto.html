@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Paula Guimarães Tecnologias</title>
+  <meta name="description" content="Fale com a Paula Guimarães Tecnologias: telefone, WhatsApp, email e morada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Paula Guimarães Tecnologias - Início">
+        <span class="logo-icone">PG</span>
+        <span>Paula Guimarães<small>Tecnologias</small></span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="menu-toggle" class="menu-botao" aria-hidden="true">&#9776;</label>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          <li><a class="btn btn-principal btn-pequeno" href="orcamento.html">Pedir orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <div class="container">
+        <h1>Fale connosco</h1>
+        <p>Dúvidas, assistência ou parcerias. Respondemos o mais depressa possível.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container dividida">
+        <!-- IMPORTANTE: troque SEU_ID_CONTACTO pelo endereço do seu serviço de envio (ex.: Formspree). -->
+        <form class="formulario" action="https://formspree.io/f/SEU_ID_CONTACTO" method="post">
+          <div class="campo">
+            <label for="c-nome">Nome</label>
+            <input type="text" id="c-nome" name="nome" autocomplete="name" required>
+            <span class="erro">Escreva o seu nome.</span>
+          </div>
+          <div class="campo">
+            <label for="c-contacto">Email ou telefone</label>
+            <input type="text" id="c-contacto" name="contacto" required>
+            <span class="erro">Indique um email ou telefone.</span>
+          </div>
+          <div class="campo">
+            <label for="c-assunto">Assunto</label>
+            <select id="c-assunto" name="assunto" required>
+              <option value="">Escolha um assunto</option>
+              <option>Dúvida</option>
+              <option>Assistência</option>
+              <option>Parceria</option>
+              <option>Outro</option>
+            </select>
+            <span class="erro">Escolha o assunto.</span>
+          </div>
+          <div class="campo">
+            <label for="c-mensagem">Mensagem</label>
+            <textarea id="c-mensagem" name="mensagem" required></textarea>
+            <span class="erro">Escreva a sua mensagem.</span>
+          </div>
+          <p class="privacidade">Usamos os seus dados só para responder à sua mensagem.</p>
+          <button class="btn btn-principal" type="submit">Enviar mensagem</button>
+        </form>
+
+        <div>
+          <h2>Onde nos encontrar</h2>
+          <ul class="contactos">
+            <li><strong>Telefone</strong> +244 9XX XXX XXX</li>
+            <li><strong>WhatsApp</strong> <a href="https://wa.me/244940408885">Enviar mensagem</a></li>
+            <li><strong>Email</strong> geral@exemplo.co.ao</li>
+            <li><strong>Morada</strong> [Rua, bairro], Luanda, Angola</li>
+            <li><strong>Horário</strong> Segunda a sexta, 8h às 17h; sábado, 8h às 12h (a confirmar)</li>
+          </ul>
+          <div class="mapa" role="img" aria-label="Espaço para o mapa da localização">Mapa da localização (substituir por mapa incorporado)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao alt">
+      <div class="container">
+        <h2 class="centro">Perguntas frequentes</h2>
+        <details>
+          <summary>Quanto tempo demora a instalação?</summary>
+          <p>[A confirmar com a empresa. Indique o prazo habitual, por exemplo 2 a 5 dias após a aprovação do orçamento.]</p>
+        </details>
+        <details>
+          <summary>Que garantia têm os produtos?</summary>
+          <p>Garantia mínima de 12 meses. As condições exatas constam do orçamento.</p>
+        </details>
+        <details>
+          <summary>Posso pagar em prestações?</summary>
+          <p>[A confirmar com a empresa. Descreva as formas de pagamento disponíveis.]</p>
+        </details>
+        <details>
+          <summary>O orçamento tem custo?</summary>
+          <p>Não. A visita técnica e o orçamento são gratuitos e sem compromisso.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grelha">
+        <div>
+          <h3>Paula Guimarães Tecnologias</h3>
+          <p>Energia solar e internet para casas, escolas e negócios em Angola.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="orcamento.html">Pedir orçamento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Telefone: +244 940408885</li>
+            <li>Email: paulaguimaraes020624@gmail.com</li>
+            <li>Luanda, Angola</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Novidades</h3>
+          <p>Dicas de poupança de energia e ofertas. Sem spam.</p>
+          <form class="newsletter" action="https://formspree.io/f/SEU_ID_NEWSLETTER" method="post">
+            <label for="email-news" class="skip">O seu email</label>
+            <input type="email" id="email-news" name="email" placeholder="O seu email" required>
+            <button class="btn btn-principal btn-pequeno" type="submit">Receber novidades</button>
+          </form>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Paula Guimarães Tecnologias. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whats-flutuante" href="https://wa.me/244940408885" aria-label="Falar no WhatsApp">WhatsApp</a>
+</body>
+</html>
