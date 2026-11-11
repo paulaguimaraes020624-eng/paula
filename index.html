@@ -1,180 +1,191 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-AO">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paula Guimarães | Portfólio de Programação</title>
-<meta name="description" content="Portfólio de estudante de programação: sobre mim, skills, projetos e contactos.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paula Guimarães Tecnologias | Energia solar e internet em Angola</title>
+  <meta name="description" content="Kits solares e internet estável para a sua casa, loja ou escola em Angola. Instalação e garantia incluídas. Peça o seu orçamento grátis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
 
-
-<header>
-  <div class="container">
-    <nav>
-      <a href="#inicio" class="logo">&lt;<b>Paula Guimarães</b>/&gt;</a>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contactos">Contactos</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div>
-      <span class="tag">👋 Disponível para estágios e projetos</span>
-      <h1>Olá, eu sou  <span> A Paula Guimarães</span><br>Estudante de Programação</h1>
-      <p>Transformo ideias em código limpo e soluções úteis. Estou a aprender, a construir e à procura de oportunidades para crescer em equipa.</p>
-      <div class="hero-btns">
-        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-        <a href="#contactos" class="btn btn-outline">Contactar-me</a>
-      </div>
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Paula Guimarães Tecnologias - Início">
+        <span class="logo-icone">PG</span>
+        <span>Paula Guimarães<small>Tecnologias</small></span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+      <label for="menu-toggle" class="menu-botao" aria-hidden="true">&#9776;</label>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a class="btn btn-principal btn-pequeno" href="orcamento.html">Pedir orçamento</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="photo-wrap">
-      <div class="photo-frame">
-        <div class="photo">
-          
-          <img src="minha foto.jpg" alt="Foto de Paula Guimarães" onerror="this.remove()">
-          <span style="position:absolute;z-index:-1">Paula</span>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <h1>Energia e ligação, onde você estiver.</h1>
+        <p>Kits solares e internet estável para a sua casa, loja ou escola. Instalação e garantia incluídas.</p>
+        <div class="hero-botoes">
+          <a class="btn btn-principal" href="produtos.html">Ver produtos</a>
+          <a class="btn btn-claro" href="orcamento.html">Pedir orçamento grátis</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<section class="about" id="sobre">
-  <div class="container">
-    <div class="section-title">
-      <h2>Sobre Mim</h2>
-      <span class="bar"></span>
-    </div>
-    <div class="about-box">
-      <p>Sou estudante de programação, apaixonado por tecnologia e por resolver problemas. Gosto de criar sites, aplicações e ferramentas que facilitem a vida das pessoas.</p>
-      <p>Procuro sempre aprender algo novo, trabalhar em equipa e escrever código organizado e fácil de manter. O meu objetivo é tornar-me um programador completo e contribuir para projetos reais.</p>
-      <div class="stats">
-        <div class="stat"><h3>10+</h3><p>Projetos feitos</p></div>
-        <div class="stat"><h3>2</h3><p>Anos a programar</p></div>
-        <div class="stat"><h3>5+</h3><p>Tecnologias</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="skills">
-  <div class="container">
-    <div class="section-title">
-      <h2>Skills</h2>
-      <p>As tecnologias com que trabalho</p>
-      <span class="bar"></span>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>💻 Front-end</h3>
-        <div class="skill"><div class="skill-head"><span>HTML</span><span>90%</span></div><div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div></div>
-        <div class="skill"><div class="skill-head"><span>CSS</span><span>85%</span></div><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div></div>
-        <div class="skill"><div class="skill-head"><span>JavaScript</span><span>70%</span></div><div class="bar-bg"><div class="bar-fill" style="width:70%"></div></div></div>
-      </div>
-      <div class="skill-card">
-        <h3>⚙️ Back-end</h3>
-        <div class="skill"><div class="skill-head"><span>Python</span><span>75%</span></div><div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div></div>
-        <div class="skill"><div class="skill-head"><span>Java</span><span>60%</span></div><div class="bar-bg"><div class="bar-fill" style="width:60%"></div></div></div>
-        <div class="skill"><div class="skill-head"><span>SQL</span><span>65%</span></div><div class="bar-bg"><div class="bar-fill" style="width:65%"></div></div></div>
-      </div>
-      <div class="skill-card">
-        <h3>🧰 Ferramentas e Soft Skills</h3>
-        <div class="chips">
-          <span class="chip">Git &amp; GitHub</span>
-          <span class="chip">VS Code</span>
-          <span class="chip">Linux</span>
-          <span class="chip">Figma</span>
-          <span class="chip">Trabalho em equipa</span>
-          <span class="chip">Resolução de problemas</span>
-          <span class="chip">Comunicação</span>
+    <section class="secao">
+      <div class="container centro">
+        <h2>Resolvemos o que lhe tira o sossego</h2>
+        <p class="intro">Cortes de energia e internet fraca param o trabalho, as aulas e as vendas. Nós tratamos disso.</p>
+        <div class="grelha">
+          <article class="cartao">
+            <div class="icone">☀</div>
+            <h3>Sem luz?</h3>
+            <p>Os cortes não têm de parar o seu dia. Energia do sol, todos os dias, sem gastar em combustível.</p>
+          </article>
+          <article class="cartao">
+            <div class="icone azul">◉</div>
+            <h3>Internet fraca?</h3>
+            <p>Ligue-se sem depender da rede fixa, em casa, na loja ou no campo.</p>
+          </article>
+          <article class="cartao">
+            <div class="icone">?</div>
+            <h3>Sem saber por onde começar?</h3>
+            <p>Visitamos o local e fazemos o orçamento grátis, sem compromisso.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<section class="projects" id="projetos">
-  <div class="container">
-    <div class="section-title">
-      <h2>Projetos</h2>
-      <p>Alguns trabalhos que desenvolvi</p>
-      <span class="bar"></span>
-    </div>
-    <div class="project-grid">
-      <article class="project">
-        <div class="project-img p1">🌐</div>
-        <div class="project-body">
-          <h3>Site Pessoal</h3>
-          <p>Website responsivo para apresentar o meu percurso, feito do zero com HTML e CSS.</p>
-          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
-          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
+    <section class="secao alt">
+      <div class="container centro">
+        <h2>O que oferecemos</h2>
+        <p class="intro">Três soluções de energia e três de conectividade, para vários orçamentos.</p>
+        <div class="grelha">
+          <article class="cartao">
+            <span class="etiqueta">Energia</span>
+            <h3>Kits solares para casa</h3>
+            <p>Do kit básico ao completo. Luz, TV, ventoinha e frigorífico mesmo quando a rede falha.</p>
+            <a class="btn btn-secundario btn-pequeno" href="produtos.html">Ver mais</a>
+          </article>
+          <article class="cartao">
+            <span class="etiqueta">Energia</span>
+            <h3>Painéis e baterias</h3>
+            <p>Painéis, baterias de lítio e controladores testados, com garantia.</p>
+            <a class="btn btn-secundario btn-pequeno" href="produtos.html">Ver mais</a>
+          </article>
+          <article class="cartao">
+            <span class="etiqueta">Energia</span>
+            <h3>Inversores e power banks</h3>
+            <p>Leve a energia consigo e mantenha computador, router e telemóvel ligados.</p>
+            <a class="btn btn-secundario btn-pequeno" href="produtos.html">Ver mais</a>
+          </article>
+          <article class="cartao">
+            <span class="etiqueta azul">Conectividade</span>
+            <h3>Routers 4G e 5G</h3>
+            <p>Internet em casa sem cabos. Ligue-se em minutos.</p>
+            <a class="btn btn-secundario btn-pequeno" href="produtos.html">Ver mais</a>
+          </article>
+          <article class="cartao">
+            <span class="etiqueta azul">Conectividade</span>
+            <h3>Antenas e repetidores</h3>
+            <p>Leve o sinal ao quintal, ao andar de cima ou à loja do fundo.</p>
+            <a class="btn btn-secundario btn-pequeno" href="produtos.html">Ver mais</a>
+          </article>
+          <article class="cartao">
+            <span class="etiqueta azul">Conectividade</span>
+            <h3>Pacotes para negócios</h3>
+            <p>Solar e internet num só pacote, para lojas, escolas, clínicas e igrejas.</p>
+            <a class="btn btn-secundario btn-pequeno" href="solucoes.html">Ver mais</a>
+          </article>
         </div>
-      </article>
-      <article class="project">
-        <div class="project-img p2">✅</div>
-        <div class="project-body">
-          <h3>Lista de Tarefas</h3>
-          <p>Aplicação para adicionar, concluir e apagar tarefas, com dados guardados no navegador.</p>
-          <div class="chips"><span class="chip">JavaScript</span><span class="chip">LocalStorage</span></div>
-          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
-        </div>
-      </article>
-      <article class="project">
-        <div class="project-img p3">🐍</div>
-        <div class="project-body">
-          <h3>Gestor de Notas</h3>
-          <p>Programa em Python para gerir notas de alunos e calcular médias automaticamente.</p>
-          <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span></div>
-          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-<section id="contactos">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contactos</h2>
-      <p>Vamos conversar? Estou aberto a oportunidades.</p>
-      <span class="bar"></span>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="info-item"><div class="ico">✉️</div><div><small>Email</small>teuemail@exemplo.com</div></div>
-        <div class="info-item"><div class="ico">📱</div><div><small>Telefone / WhatsApp</small>+244 940 408 885</div></div>
-        <div class="info-item"><div class="ico">📍</div><div><small>Localização</small>Luanda, Angola</div></div>
-        <div class="info-item"><div class="ico">🔗</div><div><small>Redes</small><a href="https://github.com/paulaguimaraes020624-eng?tab=repositories">GitHub</a> · <a href="https://www.linkedin.com/in/paula-guimaraes-519797443?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></div></div>
       </div>
-      
-      <form action="mailto:paulaguimaraes020624@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="nome" placeholder="O teu nome" required>
-        <input type="email" name="email" placeholder="O teu email" required>
-        <textarea name="mensagem" placeholder="A tua mensagem" required></textarea>
-        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-      </form>
+    </section>
+
+    <section class="secao">
+      <div class="container centro">
+        <h2>Como funciona</h2>
+        <div class="grelha passos">
+          <article class="cartao"><h3>Fale connosco</h3><p>Preencha o formulário ou envie uma mensagem no WhatsApp.</p></article>
+          <article class="cartao"><h3>Visitamos e orçamentamos</h3><p>Um técnico vê o local e propõe a solução certa, com preço claro.</p></article>
+          <article class="cartao"><h3>Instalamos e damos assistência</h3><p>Instalação feita por nós, com garantia e apoio depois da compra.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao alt">
+      <div class="container">
+        <h2 class="centro">Porquê a Paula Guimarães</h2>
+        <div class="grelha">
+          <article class="cartao"><h3>Garantia real</h3><p>Garantia mínima de 12 meses nos nossos produtos.</p></article>
+          <article class="cartao"><h3>Instalação incluída</h3><p>Não fica sozinho com uma caixa de peças.</p></article>
+          <article class="cartao"><h3>Preço claro</h3><p>Orçamento por escrito, sem letras pequenas.</p></article>
+          <article class="cartao"><h3>Apoio depois da compra</h3><p>Assistência e manutenção quando precisar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-cta">
+      <div class="container">
+        <h2>Pronto para nunca mais ficar às escuras?</h2>
+        <p>Resposta em 24 horas. Sem compromisso.</p>
+        <a class="btn btn-principal" href="orcamento.html">Pedir orçamento</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grelha">
+        <div>
+          <h3>Paula Guimarães Tecnologias</h3>
+          <p>Energia solar e internet para casas, escolas e negócios em Angola.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="solucoes.html">Soluções</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="orcamento.html">Pedir orçamento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li>Telefone: +244 940408885</li>
+            <li>Email: paulaguimaraes020624@gmail.com</li>
+            <li>Luanda, Angola</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Novidades</h3>
+          <p>Dicas de poupança de energia e ofertas. Sem spam.</p>
+          <form class="newsletter" action="https://formspree.io/f/SEU_ID_NEWSLETTER" method="post">
+            <label for="email-news" class="skip">O seu email</label>
+            <input type="email" id="email-news" name="email" placeholder="O seu email" required>
+            <button class="btn btn-principal btn-pequeno" type="submit">Receber novidades</button>
+          </form>
+        </div>
+      </div>
+      <p class="copy">&copy; 2026 Paula Guimarães Tecnologias. Todos os direitos reservados.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="container">© 2026 O Teu Nome. Feito com HTML e CSS.</div>
-</footer>
-
+  <a class="whats-flutuante" href="https://wa.me/244940408885" aria-label="Falar no WhatsApp">WhatsApp</a>
 </body>
 </html>
