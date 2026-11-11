@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paula Guimarães | Portfólio de Programação</title>
+<meta name="description" content="Portfólio de estudante de programação: sobre mim, skills, projetos e contactos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#inicio" class="logo">&lt;<b>Paula Guimarães</b>/&gt;</a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <span class="tag">👋 Disponível para estágios e projetos</span>
+      <h1>Olá, eu sou  <span> A Paula Guimarães</span><br>Estudante de Programação</h1>
+      <p>Transformo ideias em código limpo e soluções úteis. Estou a aprender, a construir e à procura de oportunidades para crescer em equipa.</p>
+      <div class="hero-btns">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contactos" class="btn btn-outline">Contactar-me</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <div class="photo">
+          
+          <img src="minha foto.jpg" alt="Foto de Paula Guimarães" onerror="this.remove()">
+          <span style="position:absolute;z-index:-1">Paula</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about" id="sobre">
+  <div class="container">
+    <div class="section-title">
+      <h2>Sobre Mim</h2>
+      <span class="bar"></span>
+    </div>
+    <div class="about-box">
+      <p>Sou estudante de programação, apaixonado por tecnologia e por resolver problemas. Gosto de criar sites, aplicações e ferramentas que facilitem a vida das pessoas.</p>
+      <p>Procuro sempre aprender algo novo, trabalhar em equipa e escrever código organizado e fácil de manter. O meu objetivo é tornar-me um programador completo e contribuir para projetos reais.</p>
+      <div class="stats">
+        <div class="stat"><h3>10+</h3><p>Projetos feitos</p></div>
+        <div class="stat"><h3>2</h3><p>Anos a programar</p></div>
+        <div class="stat"><h3>5+</h3><p>Tecnologias</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+  <div class="container">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <p>As tecnologias com que trabalho</p>
+      <span class="bar"></span>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>💻 Front-end</h3>
+        <div class="skill"><div class="skill-head"><span>HTML</span><span>90%</span></div><div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>CSS</span><span>85%</span></div><div class="bar-bg"><div class="bar-fill" style="width:85%"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>JavaScript</span><span>70%</span></div><div class="bar-bg"><div class="bar-fill" style="width:70%"></div></div></div>
+      </div>
+      <div class="skill-card">
+        <h3>⚙️ Back-end</h3>
+        <div class="skill"><div class="skill-head"><span>Python</span><span>75%</span></div><div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>Java</span><span>60%</span></div><div class="bar-bg"><div class="bar-fill" style="width:60%"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>SQL</span><span>65%</span></div><div class="bar-bg"><div class="bar-fill" style="width:65%"></div></div></div>
+      </div>
+      <div class="skill-card">
+        <h3>🧰 Ferramentas e Soft Skills</h3>
+        <div class="chips">
+          <span class="chip">Git &amp; GitHub</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Linux</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Trabalho em equipa</span>
+          <span class="chip">Resolução de problemas</span>
+          <span class="chip">Comunicação</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="projects" id="projetos">
+  <div class="container">
+    <div class="section-title">
+      <h2>Projetos</h2>
+      <p>Alguns trabalhos que desenvolvi</p>
+      <span class="bar"></span>
+    </div>
+    <div class="project-grid">
+      <article class="project">
+        <div class="project-img p1">🌐</div>
+        <div class="project-body">
+          <h3>Site Pessoal</h3>
+          <p>Website responsivo para apresentar o meu percurso, feito do zero com HTML e CSS.</p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-img p2">✅</div>
+        <div class="project-body">
+          <h3>Lista de Tarefas</h3>
+          <p>Aplicação para adicionar, concluir e apagar tarefas, com dados guardados no navegador.</p>
+          <div class="chips"><span class="chip">JavaScript</span><span class="chip">LocalStorage</span></div>
+          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-img p3">🐍</div>
+        <div class="project-body">
+          <h3>Gestor de Notas</h3>
+          <p>Programa em Python para gerir notas de alunos e calcular médias automaticamente.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span></div>
+          <div class="project-links"><a href="#">Ver online →</a><a href="#">Código</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="contactos">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contactos</h2>
+      <p>Vamos conversar? Estou aberto a oportunidades.</p>
+      <span class="bar"></span>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-item"><div class="ico">✉️</div><div><small>Email</small>teuemail@exemplo.com</div></div>
+        <div class="info-item"><div class="ico">📱</div><div><small>Telefone / WhatsApp</small>+244 940 408 885</div></div>
+        <div class="info-item"><div class="ico">📍</div><div><small>Localização</small>Luanda, Angola</div></div>
+        <div class="info-item"><div class="ico">🔗</div><div><small>Redes</small><a href="https://github.com/paulaguimaraes020624-eng?tab=repositories">GitHub</a> · <a href="https://www.linkedin.com/in/paula-guimaraes-519797443?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></div></div>
+      </div>
+      
+      <form action="mailto:paulaguimaraes020624@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="O teu nome" required>
+        <input type="email" name="email" placeholder="O teu email" required>
+        <textarea name="mensagem" placeholder="A tua mensagem" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 O Teu Nome. Feito com HTML e CSS.</div>
+</footer>
+
+</body>
+</html>
